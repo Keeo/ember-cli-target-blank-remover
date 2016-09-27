@@ -1,27 +1,15 @@
 # Ember-cli-target-blank-remover
 
-This README outlines the details of collaborating on this Ember addon.
+Removes `/target=("|')_blank("|')/gi` from templates.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-target-blank-remover`
-* `npm install`
-* `bower install`
+`ember install ember-cli-target-blank-remover`
 
-## Running
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+## Usage
+Add toggle to ember-cli-build.js.
+```
+var app = new EmberApp(defaults, {
+  removeTargetBlank: EmberApp.env() === 'development',
+});
+```
