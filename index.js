@@ -17,10 +17,6 @@ module.exports = {
     this.isEnabled = this.app.options.removeTargetBlank || false;
   },
 
-  isDevelopingAddon: function() {
-    return true;
-  },
-
   setupPreprocessorRegistry: function(type, registry) {
     registry.add('template', {
       name: 'target-blank-remover',
