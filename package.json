@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-target-blank-remover",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ember addon that removes target='_blank' from templates.",
   "directories": {
     "doc": "doc",
